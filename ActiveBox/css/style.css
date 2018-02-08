@@ -1,0 +1,330 @@
+/*
+GENERAL STYLES
+******************/
+* {
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+}
+
+header {
+	background-color: rgb(43, 47, 73);
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-top: 96px;
+}
+
+a {
+	color: #fff;
+	text-decoration: none!important;
+}
+
+a:hover {
+	color: grey;
+}
+
+.container {
+	max-width: 70%;
+}
+
+.btn {
+	font-size: .8em;
+	padding: .7em 3.2em;
+}
+
+.navbar-toggle-icon {
+	color: #fff;
+}
+
+/*
+HEADER
+*******************/
+nav, .jumbotron {
+	background-color: transparent;
+}
+
+/*
+NAV
+*******************/
+
+.nav-border {
+	border-bottom: 1px solid grey;
+}
+
+.navbar-brand, .big-brand {
+	font-size: 1.5em;
+}
+
+.navbar-brand span {
+	font-weight: 900;
+	font-family: 'Anton', sans-serif;
+	color: #8B8AB3;
+}
+
+.nav-link {
+	font-size: .8em;
+}
+
+.bg-purple1 {
+	background-color: rgb(43, 47, 73);
+	transition: box-shadow .5s, padding .5s;
+}
+
+.bg-purple2 {
+	background-color: rgb(43, 47, 73);
+	box-shadow: 4px 0px 10px #000;
+	padding: .01em;
+	transition: box-shadow .5s, padding .5s;
+}
+
+/*
+Jumbotron
+*************/
+.jumbotron {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/*
+FEATURES
+*****************/
+
+.feature .fa {
+	font-size: 4.5em;
+	color: #DC3545;
+}
+
+#section-1 {
+	padding: 4em 0;
+}
+
+#features {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.feature {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: calc(100%/3);
+	padding: 2em;
+}
+
+.feature h6 {
+	font-weight: 900;
+	margin: 1em 0;
+}
+
+.feature p {
+	font-size: .85em;
+}
+
+/*
+WORKS
+********************/
+.works {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.work {
+	width: calc(100% / 4);
+	position: relative;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(223, 0, 36, .5);
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity .5s ease;
+}
+
+.work:hover > .overlay {
+	opacity: 1;
+}
+
+/*
+OUR TEAM
+****************/
+#team {
+	margin: 5em 0;
+}
+
+.card {
+	border: none;
+}
+
+.card-title p {
+	font-size: .75em;
+	color: #DC3545;
+}
+.card-body .fa {
+	border: 1px solid grey;
+	color: grey;
+	padding: 3px 5px;
+	transition: background-color .5s, color .5s;
+}
+
+.card-body .fa:hover {
+	background-color: #DC3545;
+	color: #fff;
+}
+
+/*
+TESTIMONIALS
+********************/
+.carousel-item-content {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 100%;
+	max-height: 500px;
+}
+
+.carousel-item-content > div {
+	background-color: #DC3545;
+	color: #fff;
+	font-size: 1.3em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0px 7em 0px 1em;
+}
+
+.quote-autor {
+	font-size: .6em;
+	font-weight: 800;
+}
+
+/*
+DOWNLOAD
+*********************/
+#download {
+	margin: 5em 0;
+}
+
+#download-content h5 {
+	font-size: 1.7em;
+	font-weight: 100;
+}
+
+#download-content p {
+	font-size: .8em;
+	font-weight: 900;
+}
+
+#download-content {
+	text-align: center;
+}
+
+/*
+FOOTER
+****************/
+footer {
+	background-color: rgb(43, 47, 73);
+	color: #fff;
+}
+
+#footer-content {
+	padding: 4em 0;
+}
+
+.location p, .about p {
+	color: grey;
+}
+
+.location, .about, .social-media {
+	font-size: .8em;
+}
+
+.social-media a {
+	border: 1px solid #fff;
+	padding: .8em;
+}
+
+#copyright-footer {
+	background-color: rgb(50, 47, 90);
+	text-align: center;
+	padding: 2em;
+}
+
+/*
+MEDIA QUERIES
+*********************/
+ @media (max-width: 935px) {
+ 	.jumbotron div > h1 {
+ 		font-size: 2.5em;
+ 	}
+
+ 	.jumbotron div > p {
+ 		font-size: .9em;
+ 	}
+
+ 	.feature {
+ 		width: calc(100%/2);
+ 	}
+
+ 	.container {
+ 		max-width: 80%;
+ 	}
+
+ 	.quote {
+ 		font-size: .7em;
+ 	}
+
+ 	.quote-autor {
+ 		font-size: .45em;
+ 	}
+ }
+
+ @media (max-width: 769px) {
+ 	.work {
+ 		width: calc(100%/2);
+ 	}
+
+ 	.social-media {
+ 		margin-bottom: 2em;
+ 	}
+ }
+
+ @media (max-width: 720px) {
+ 	.carousel-item-content {
+ 		grid-template-columns: 1fr;
+		grid-template-rows: 50% 50%;
+		max-height: 800px;
+ 	}
+
+ 	.carousel-item-content > div {
+ 		padding: 1em;
+ 	}
+ }
+ @media (max-width: 560px) {
+
+ 	.jumbotron div > h1 {
+ 		font-size: 1.5em;
+ 	}
+
+ 	.jumbotron div > p {
+ 		font-size: .8em;
+ 	}
+
+ 	.feature {
+ 		width: 100%;
+ 	}
+
+ 	.overlay p {
+ 		font-size: .8em;
+ 	}
+ }

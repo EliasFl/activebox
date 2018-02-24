@@ -1,0 +1,35 @@
+/*
+NAV
+*******************/
+
+.nav-border {
+	border-bottom: 1px solid $color-grey;
+}
+
+.navbar-brand, .big-brand {
+	font-size: 1.5em;
+}
+
+.navbar-brand {
+	span {
+		font-weight: 900;
+		font-family: 'Anton', sans-serif;
+		color: $main-light-color;
+	}
+}
+
+.nav-link {
+	font-size: .8em;
+}
+
+.bg-purple1 {
+	background-color: $main-color;
+	transition: box-shadow .5s, padding .5s;
+}
+
+.bg-purple2 {
+	background-color: $main-color;
+	box-shadow: 4px 0px 10px #000;
+	padding: .01em;
+	transition: box-shadow .5s, padding .5s;
+}

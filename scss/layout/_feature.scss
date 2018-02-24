@@ -1,0 +1,40 @@
+/*
+FEATURES
+*****************/
+
+.feature .fa {
+	font-size: 4.5em;
+	color: #DC3545;
+}
+
+#section-1 {
+	padding: 4em 0;
+}
+
+#features {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.feature {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: calc(100%/3);
+	padding: 2em;
+	@media (max-width: 935px) {
+ 		width: calc(100%/2);
+ 	}
+ 	@media (max-width: 560px) {
+ 		width: 100%;
+ 	}
+}
+
+.feature h6 {
+	font-weight: 900;
+	margin: 1em 0;
+}
+
+.feature p {
+	font-size: .85em;
+}

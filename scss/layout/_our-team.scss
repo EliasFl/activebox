@@ -1,0 +1,30 @@
+/*
+OUR TEAM
+****************/
+#team {
+	margin: 5em 0;
+}
+
+.card {
+	border: none;
+}
+
+.card-title {
+	p {
+		font-size: .75em;
+		color: $secondary-color;
+	}
+}
+
+.card-body {
+	.fa {
+		border: 1px solid $color-grey;
+		color: $color-grey;
+		padding: 3px 5px;
+		transition: background-color .5s, color .5s;
+		&:hover {
+			background-color: $secondary-color;
+			color: $white;
+		}
+	}
+}

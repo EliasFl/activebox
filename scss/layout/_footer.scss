@@ -1,0 +1,36 @@
+/*
+FOOTER
+****************/
+footer {
+	background-color: $main-color;
+	color: $white;
+}
+
+#footer-content {
+	padding: 4em 0;
+}
+
+.location p, .about p {
+	color: $color-grey;
+}
+
+.location, .about, .social-media {
+	font-size: .8em;
+}
+
+.social-media {
+	a {
+		border: 1px solid $white;
+		padding: .8em;
+	}
+	@media (max-width: 769px) {
+	 	margin-bottom: 2em;
+	}
+}
+
+#copyright-footer {
+	background-color: $main-light-color;
+	text-align: center;
+	padding: 2em;
+	color: $white;
+}

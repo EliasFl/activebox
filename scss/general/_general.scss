@@ -1,0 +1,40 @@
+/*
+GENERAL STYLES
+******************/
+* {
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+}
+
+header {
+	background-color: $main-color;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-top: 96px;
+}
+
+a {
+	color: $white;
+	text-decoration: none!important;
+	&:hover {
+		color: $color-grey;
+	}
+}
+
+.container {
+	max-width: 70%;
+	@media (max-width: 935px) {
+ 		max-width: 80%;
+	}
+}
+
+.btn {
+	font-size: .8em;
+	padding: .7em 3.2em;
+}
+
+.navbar-toggle-icon {
+	color: $white;
+}
